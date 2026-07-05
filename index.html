@@ -11,6 +11,14 @@
     <p><h1>Why use git revert?
 Safely undo changes in a shared repository.
 Preserve the project history.
-Avoid rewriting commit history.</h1></p>
+Avoid rewriting commit history.
+| Command       | Purpose                                                | History Changed? | Safe for Shared Repositories? |
+| ------------- | ------------------------------------------------------ | ---------------- | ----------------------------- |
+| `git revert`  | Undo a commit by creating a new commit                 | ❌ No             | ✅ Yes                         |
+| `git reset`   | Move the branch pointer and optionally discard commits | ✅ Yes            | ❌ No (after pushing)          |
+| `git restore` | Restore files in the working directory or staging area | ❌ No             | ✅ Yes                         |
+
+</h1></p>
+
 </body>
 </html>
